@@ -1,64 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-    <LinearLayout android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:orientation="vertical">
+    <TextView
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Hello World!"
+        android:background="#66CDAA" />
 
-        <LinearLayout android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Hello World!"
-                android:background="#66CDAA"
-                android:gravity="center"
-                android:layout_weight="2"/>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/button" />
 
-        <LinearLayout android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/button"
-                android:layout_gravity="center"
-                android:layout_weight="1"/>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
-            <AnalogClock
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#AAAA00"
-                android:gravity="center"
-                android:layout_weight="2"/>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-    </LinearLayout>
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <AnalogClock
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#AAAA00"/>
+</LinearLayout>
